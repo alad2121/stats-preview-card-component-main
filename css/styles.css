@@ -48,7 +48,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7;
   font-size: 0.9rem;
-  padding-bottom: 88px;
 }
 .card-container .text-area .header #highlighted-text {
   color: #af5cdb;
@@ -57,16 +56,28 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
 }
+.card-container .text-area .grid-container .item {
+  margin-top: 70px;
+}
+.card-container .text-area .grid-container .item h2 {
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.card-container .text-area .grid-container .item h2:hover {
+  transform: translateY(-5px);
+  color: #af5cdb;
+}
 .card-container .text-area .grid-container p {
   font-size: 0.7rem;
   letter-spacing: 2px;
 }
 .card-container .picture {
   position: relative;
-  background: url(/images/image-header-desktop.jpg) no-repeat;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 50%;
+  background: url(https://alad2121.github.io/stats-preview-card-component-main/images/image-header-desktop.jpg);
 }
 .card-container .picture .overlay {
   background-color: #560a85;
@@ -175,7 +186,7 @@ footer .attribution span a:hover {
   }
   .mobile-card-container .mobile-picture {
     margin: 0 auto;
-    background: url(/images/image-header-mobile.jpg) no-repeat;
+    background: url(https://lawrencecheng123.github.io/images/image-header-mobile.jpg) no-repeat;
     background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
