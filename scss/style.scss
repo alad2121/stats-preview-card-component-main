@@ -1,3 +1,4 @@
+// Global Rules //
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,6 @@
   overflow-x: hidden;
 }
 
-// Global Rules
 body {
   background-color: hsl(233, 47%, 7%);
 }
@@ -21,14 +21,14 @@ body {
   height: 100vh;
 }
 
-// Card Container //
+ // Card Container //
 .card-container {
   display: flex;
   justify-content: center;
   margin: auto auto;
   width: 70%;
 
-  // Text //
+   // Text //
   .text-area {
     color: hsl(0, 0%, 100%);
     width: 50%;
@@ -53,7 +53,6 @@ body {
       color: hsla(0, 0%, 100%, 0.6);
       line-height: 1.7;
       font-size: 0.9rem;
-      padding-bottom: 88px;
     }
 
     .header {
@@ -62,11 +61,23 @@ body {
       }
     }
 
-    // Accomplishments
-
+     // Accomplishments //
     .grid-container {
       display: grid;
       grid-template-columns: auto auto auto;
+
+      .item{
+        margin-top: 70px;
+      }
+      .item h2{ 
+        margin-top: 30px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      .item h2:hover{
+        transform: translateY(-5px);
+        color:hsl(279, 64%, 61%); 
+      }
 
       p {
         font-size: 0.7rem;
@@ -75,13 +86,14 @@ body {
     }
   }
 
+   // Picture on the right //
   .picture {
     position: relative;
     background: url(/images/image-header-desktop.jpg) no-repeat;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
     width: 50%;
+
     .overlay {
       background-color: hsl(277, 86%, 28%);
       position: absolute;
@@ -207,6 +219,7 @@ footer {
     height: 100%;
   }
 
+   // Card Container //
   .mobile-card-container {
     display: block;
     height: 100%;
@@ -215,6 +228,7 @@ footer {
     padding: 20% 0% 20% 0%;
     font-family: "Lexend Deca", sans-serif;
 
+    // Picture on the right //
     .mobile-picture {
       margin: 0 auto;
       background: url(/images/image-header-mobile.jpg) no-repeat;
@@ -237,6 +251,7 @@ footer {
       }
     }
 
+     // Text //
     .mobile-text-area {
       color: hsl(0, 0%, 100%);
       background-color: hsl(244, 38%, 16%);
@@ -262,6 +277,7 @@ footer {
       }
     }
 
+     // Accomplishments //
     .grid-container {
       div {
         padding: 15px;
